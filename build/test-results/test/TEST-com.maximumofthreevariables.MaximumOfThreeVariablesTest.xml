@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.maximumofthreevariables.MaximumOfThreeVariablesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-07T03:29:43" hostname="PRABHAKAR" time="0.003">
+<testsuite name="com.maximumofthreevariables.MaximumOfThreeVariablesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-07T03:46:24" hostname="PRABHAKAR" time="0.003">
   <properties/>
-  <testcase name="givenThreeIntegersDifferentOrder_WhenMaximumFound_ShouldReturnMaximumValue" classname="com.maximumofthreevariables.MaximumOfThreeVariablesTest" time="0.003"/>
+  <testcase name="givenThreeFloatValues_WhenMaximumFound_ShouldReturnFirstPositionValue" classname="com.maximumofthreevariables.MaximumOfThreeVariablesTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
