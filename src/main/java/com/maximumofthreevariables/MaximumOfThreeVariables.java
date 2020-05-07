@@ -1,27 +1,24 @@
 package com.maximumofthreevariables;
 
-public class MaximumOfThreeVariables {
+public class MaximumOfThreeVariables<E extends Comparable> {
 
-    public Integer findMaximumValue(Integer x, Integer y, Integer z) {
-        Integer max = x;
-        if(y.compareTo(max)>0)
-            max = y;
-        if(z.compareTo(max)>0)
-            max = z;
-        return max;
+    E x;
+    E y;
+    E z;
+
+    public MaximumOfThreeVariables(E x,E y,E z) {
+        this.x=x;
+        this.y=y;
+        this.z=z;
     }
 
-    public Float findMaximumValue(Float x, Float y, Float z) {
-        Float max = x;
-        if(y.compareTo(max)>0)
-            max = y;
-        if(z.compareTo(max)>0)
-            max = z;
-        return max;
+    public E testMaximum(){
+        MaximumOfThreeVariables<E> eMaximumOfThreeVariables = new MaximumOfThreeVariables<E>(x, y, z);
+        return eMaximumOfThreeVariables.findMaximumValue();
     }
 
-    public String findMaximumValue(String x, String y, String z) {
-        String max = x;
+    public E findMaximumValue() {
+        E max = x;
         if(y.compareTo(max)>0)
             max = y;
         if(z.compareTo(max)>0)
