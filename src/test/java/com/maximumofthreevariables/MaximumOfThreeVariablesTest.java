@@ -46,4 +46,25 @@ public class MaximumOfThreeVariablesTest {
         Float maximumValue = maximumOfThreeVariables.findMaximumValue(3.3f, 2.2f, 1.1f);
         Assert.assertEquals((Object) 3.3f,maximumValue);
     }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumFound_ShouldReturnThirdPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables();
+        String maximumValue = maximumOfThreeVariables.findMaximumValue("aaa","bbb", "ccc");
+        Assert.assertEquals((Object) "ccc",maximumValue);
+    }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumFound_ShouldReturnSecondPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables();
+        String maximumValue = maximumOfThreeVariables.findMaximumValue("aaa","ccc", "ccc");
+        Assert.assertEquals((Object) "ccc",maximumValue);
+    }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumFound_ShouldReturnFirstPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables();
+        String maximumValue = maximumOfThreeVariables.findMaximumValue("ccc", "bbb", "aaa");
+        Assert.assertEquals((Object) "ccc",maximumValue);
+    }
 }
