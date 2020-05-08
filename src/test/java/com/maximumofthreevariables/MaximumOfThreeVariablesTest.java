@@ -27,6 +27,13 @@ public class MaximumOfThreeVariablesTest {
     }
 
     @Test
+    public void givenMoreThanThreeIntegers_WhenMaximumFound_ShouldReturnFirstPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables(3,2,1,9,10,8,7);
+        Integer maximumValue = (Integer) maximumOfThreeVariables.testMaximum();
+        Assert.assertEquals((Object) 10,maximumValue);
+    }
+
+    @Test
     public void givenThreeFloatValues_WhenMaximumFound_ShouldReturnThirdPositionValue() {
         MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables(1.1f, 2.2f, 3.3f);
         Float maximumValue = (Float) maximumOfThreeVariables.testMaximum();
@@ -48,6 +55,13 @@ public class MaximumOfThreeVariablesTest {
     }
 
     @Test
+    public void givenMoreThanThreeFloatValues_WhenMaximumFound_ShouldReturnFirstPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables(3.3f, 2.2f, 1.1f,4.5f,2.3f,1.8f);
+        Float maximumValue = (Float) maximumOfThreeVariables.testMaximum();
+        Assert.assertEquals((Object) 4.5f,maximumValue);
+    }
+
+    @Test
     public void givenThreeStrings_WhenMaximumFound_ShouldReturnThirdPositionValue() {
         MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables("aaa","bbb","ccc");
         String maximumValue = (String) maximumOfThreeVariables.testMaximum();
@@ -66,5 +80,12 @@ public class MaximumOfThreeVariablesTest {
         MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables("ccc", "bbb", "aaa");
         String maximumValue = (String) maximumOfThreeVariables.testMaximum();
         Assert.assertEquals((Object) "ccc",maximumValue);
+    }
+
+    @Test
+    public void givenMoreThanThreeStrings_WhenMaximumFound_ShouldReturnFirstPositionValue() {
+        MaximumOfThreeVariables maximumOfThreeVariables = new MaximumOfThreeVariables("ccc", "bbb","ddd", "aaa","abc");
+        String maximumValue = (String) maximumOfThreeVariables.testMaximum();
+        Assert.assertEquals((Object) "ddd",maximumValue);
     }
 }
